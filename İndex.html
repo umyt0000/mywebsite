@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>İşletme Adı</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #1d3557; color: white; padding: 20px; text-align: center; }
-        nav { background: #457b9d; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .hero {
-            padding: 80px 20px; text-align: center; background: #f1faee;
-        }
-        .hero h1 { font-size: 40px; }
-        .section { padding: 40px 20px; text-align: center; }
-        .services { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .card {
-            width: 250px; padding: 20px; background: #e9ecef; border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-        }
-        footer { background: #1d3557; color: white; padding: 20px; text-align: center; margin-top: 20px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renkli İşletme Sitesi</title>
+<style>
+    /* Genel stil */
+    body { margin:0; font-family: 'Arial', sans-serif; background: #f0f4f8; color:#333; }
+    a { text-decoration:none; }
+    header { background: linear-gradient(90deg, #ff6b6b, #f7d794); color:white; padding:40px 20px; text-align:center; }
+    header h1 { margin:0; font-size:3em; }
+    header p { font-size:1.2em; margin-top:10px; }
+
+    nav { display:flex; justify-content:center; gap:25px; background:#1e3799; padding:15px 0; }
+    nav a { color:white; font-weight:bold; transition:0.3s; }
+    nav a:hover { color:#ff9f43; }
+
+    .hero { text-align:center; padding:80px 20px; background:linear-gradient(135deg, #ff9f43, #ff6b6b); color:white; }
+    .hero h2 { font-size:2.5em; margin-bottom:20px; }
+    .hero p { font-size:1.2em; }
+
+    section { padding:60px 20px; text-align:center; }
+    section h2 { font-size:2em; margin-bottom:40px; color:#1e3799; }
+
+    .services { display:flex; flex-wrap:wrap; justify-content:center; gap:25px; }
+    .card { background:white; padding:25px; border-radius:15px; width:250px; box-shadow:0 5px 15px rgba(0,0,0,0.2); transition:0.3s; }
+    .card:hover { transform: translateY(-10px); box-shadow:0 10px 20px rgba(0,0,0,0.3); }
+    .card h3 { color:#ff6b6b; margin-bottom:10px; }
+    .card p { font-size:0.95em; color:#555; }
+
+    #iletisim p { margin:10px 0; font-weight:bold; }
+
+    footer { background:#1e3799; color:white; padding:30px 20px; text-align:center; font-size:0.9em; }
+
+    @media(max-width:768px){
+        .services { flex-direction:column; align-items:center; }
+    }
+</style>
 </head>
 <body>
 
 <header>
-    <h1>İşletme Adı</h1>
-    <p>Sloganınız burada yer alır</p>
+    <h1>Renkli İşletme</h1>
+    <p>Modern ve şık çözümler sunuyoruz</p>
 </header>
 
 <nav>
@@ -36,41 +52,41 @@
 </nav>
 
 <div class="hero">
-    <h1>Profesyonel Hizmet Sunuyoruz</h1>
-    <p>Kaliteli ve güvenilir çözümler için yanınızdayız.</p>
+    <h2>Kaliteli ve Renkli Hizmetler</h2>
+    <p>İşinizi büyütmek ve fark yaratmak için buradayız</p>
 </div>
 
-<section id="hakkimizda" class="section">
+<section id="hakkimizda">
     <h2>Hakkımızda</h2>
-    <p>İşletmeniz hakkında kısa bir tanıtım yazısı buraya gelecek.</p>
+    <p>İşletmemiz, müşterilerine en kaliteli hizmetleri sunmayı amaçlayan modern bir girişimdir. Yenilikçi çözümlerimizle fark yaratıyoruz.</p>
 </section>
 
-<section id="hizmetler" class="section">
+<section id="hizmetler">
     <h2>Hizmetlerimiz</h2>
     <div class="services">
         <div class="card">
-            <h3>Hizmet 1</h3>
-            <p>Kısa açıklama.</p>
+            <h3>Web Tasarım</h3>
+            <p>Modern, hızlı ve mobil uyumlu web siteleri tasarlıyoruz.</p>
         </div>
         <div class="card">
-            <h3>Hizmet 2</h3>
-            <p>Kısa açıklama.</p>
+            <h3>Grafik Tasarım</h3>
+            <p>Markanıza özel şık grafikler ve görseller üretiyoruz.</p>
         </div>
         <div class="card">
-            <h3>Hizmet 3</h3>
-            <p>Kısa açıklama.</p>
+            <h3>Danışmanlık</h3>
+            <p>İşletmenizin gelişimi için profesyonel danışmanlık sağlıyoruz.</p>
         </div>
     </div>
 </section>
 
-<section id="iletisim" class="section">
+<section id="iletisim">
     <h2>İletişim</h2>
-    <p>Telefon: 0000 000 00 00</p>
-    <p>E-posta: info@isletme.com</p>
+    <p>📞 0000 000 00 00</p>
+    <p>✉ info@renklisitesi.com</p>
 </section>
 
 <footer>
-    © 2025 İşletme Adı – Tüm Hakları Saklıdır
+    © 2025 Renkli İşletme – Tüm Hakları Saklıdır
 </footer>
 
 </body>
